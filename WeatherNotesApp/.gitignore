@@ -1,0 +1,5 @@
+# MAUI / .NET
+bin/
+obj/
+*.user
+*.vs/
