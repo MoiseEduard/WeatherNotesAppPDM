@@ -18,49 +18,55 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WeatherNotesApp
-build_property.ProjectDir = D:\VisualStudioProjects\WeatherNotesApp\WeatherNotesApp\
+build_property.ProjectDir = C:\Users\Cosmin\Desktop\Proiect PDM Weather\WeatherNotesAppPDM\WeatherNotesApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/App.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/AppShell.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/MainPage.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/Resources/Styles/Colors.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/Resources/Styles/Styles.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/Views/NotesPage.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/Views/ForecastPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.Views.ForecastPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ForecastPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ForecastPage.xaml
+
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/Views/NotesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.Views.NotesPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\NotesPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\NotesPage.xaml
 
-[D:/VisualStudioProjects/WeatherNotesApp/WeatherNotesApp/Views/WeatherPage.xaml]
+[C:/Users/Cosmin/Desktop/Proiect PDM Weather/WeatherNotesAppPDM/WeatherNotesApp/Views/WeatherPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WeatherNotesApp.Views.WeatherPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\WeatherPage.xaml

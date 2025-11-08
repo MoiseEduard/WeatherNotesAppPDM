@@ -1,0 +1,35 @@
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
+using WeatherNotesApp.Services;
+using Microcharts.Maui;
+using System;
+
+namespace WeatherNotesApp
+{
+    public static class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
+                .UseMicrocharts() // initialize Microcharts.Maui so ChartView in XAML can be loaded
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
+
+            string dbPath = Path.Combine(FileSystem.AppDataDirectory, "app.db");
+            builder.Services.AddSingleton<DatabaseService>(s => new DatabaseService(dbPath));
+
+            // register alert service
+            builder.Services.AddSingleton<IAlertService, MauiAlertService>();
+
+            var app = builder.Build();
+            // set service locator
+            Services.ServiceLocator.Services = app.Services;
+            return app;
+        }
+    }
+}

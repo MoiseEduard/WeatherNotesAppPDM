@@ -1,0 +1,215 @@
+﻿using Microcharts;
+using SkiaSharp;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using WeatherNotesApp.Models;
+using WeatherNotesApp.Services;
+
+namespace WeatherNotesApp.ViewModels
+{
+    public class WeatherViewModel : INotifyPropertyChanged
+    {
+        private readonly WeatherService _weatherService = new();
+        private readonly DatabaseService _databaseService;
+        private readonly IAlertService _alertService;
+
+        private string _city;
+        private WeatherInfo _weather;
+        private bool _isBusy;
+        public bool HasWeather => Weather != null;
+
+        // store last fetched forecast so UI can navigate to it
+        private List<ForecastDay> _forecast;
+        public List<ForecastDay> Forecast
+        {
+            get => _forecast;
+            private set { _forecast = value; OnPropertyChanged(); }
+        }
+
+        private List<string> _searchedCities = new();
+        public List<string> SearchedCities
+        {
+            get => _searchedCities;
+            set { _searchedCities = value; OnPropertyChanged(); }
+        }
+
+        public string City
+        {
+            get => _city;
+            set { _city = value; OnPropertyChanged(); }
+        }
+
+        public WeatherInfo Weather
+        {
+            get => _weather;
+            set
+            {
+                _weather = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(HasWeather)); // notificăm și HasWeather
+            }
+        }
+
+        public bool IsBusy
+        {
+            get => _isBusy;
+            set { _isBusy = value; OnPropertyChanged(); }
+        }
+
+        public ICommand GetWeatherCommand { get; }
+        public ICommand SaveCityAsNoteCommand { get; }
+
+        private Chart _temperatureChart;
+        public Chart TemperatureChart
+        {
+            get => _temperatureChart;
+            set { _temperatureChart = value; OnPropertyChanged(); }
+        }
+
+        private void UpdateChart(List<ForecastDay> forecast)
+        {
+            Forecast = forecast; // keep the forecast
+
+            if (forecast == null || !forecast.Any())
+            {
+                TemperatureChart = null;
+                return;
+            }
+
+            var entries = forecast.Select(d =>
+                new ChartEntry((float)d.Temp)
+                {
+                    Label = d.Date.ToString("dd MMM"),
+                    ValueLabel = $"{d.Temp}°C",
+                    Color = SKColor.Parse("#2196F3")
+                }).ToList();
+
+            // Use BarChart for daily temperatures
+            TemperatureChart = new BarChart { Entries = entries };
+        }
+
+        public WeatherViewModel(DatabaseService databaseService, IAlertService alertService)
+        {
+            _databaseService = databaseService;
+            _alertService = alertService;
+            GetWeatherCommand = new Command(async () => await GetWeatherAsync());
+            SaveCityAsNoteCommand = new Command(async () => await SaveCurrentWeatherAsNoteAsync());
+        }
+
+        private async Task GetWeatherAsync()
+        {
+            if (string.IsNullOrWhiteSpace(City)) return;
+
+            IsBusy = true;
+            try
+            {
+                Weather = await _weatherService.GetWeatherAsync(City);
+
+                // store searched cities into local list
+                if (Weather != null && !string.IsNullOrWhiteSpace(Weather.CityName))
+                {
+                    // avoid duplicates
+                    if (!SearchedCities.Contains(Weather.CityName, StringComparer.OrdinalIgnoreCase))
+                    {
+                        SearchedCities.Add(Weather.CityName);
+                        OnPropertyChanged(nameof(SearchedCities));
+                    }
+                }
+
+                // get5-day forecast and update chart
+                var forecast = await _weatherService.GetFiveDayForecastAsync(City);
+                if (forecast != null)
+                {
+                    UpdateChart(forecast);
+                }
+                else
+                {
+                    Forecast = null;
+                    TemperatureChart = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"GetWeatherAsync error: {ex}");
+                try
+                {
+                    await _alertService.ShowAlertAsync("Eroare", ex.Message, "OK");
+                }
+                catch
+                {
+                    // ignore UI failures
+                }
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        // Ensure forecast exists for the current Weather.CityName.
+        // Returns true if forecast is available after the call.
+        public async Task<bool> EnsureForecastForWeatherAsync()
+        {
+            if (Weather == null || string.IsNullOrWhiteSpace(Weather.CityName)) return false;
+
+            if (Forecast != null && Forecast.Any()) return true;
+
+            IsBusy = true;
+            try
+            {
+                var forecast = await _weatherService.GetFiveDayForecastAsync(Weather.CityName);
+                if (forecast != null && forecast.Any())
+                {
+                    UpdateChart(forecast);
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"EnsureForecastForWeatherAsync error: {ex}");
+                return false;
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        private async Task SaveCurrentWeatherAsNoteAsync()
+        {
+            if (Weather == null) return;
+
+            var note = new Note
+            {
+                Date = DateTime.Now,
+                Text = $"Saved weather for {Weather.CityName}",
+                WeatherCondition = Weather.Description,
+                CityName = Weather.CityName,
+                Temperature = Weather.Temperature
+            };
+
+            await _databaseService.SaveNoteAsync(note);
+            // optionally refresh UI / notify user
+            try
+            {
+                await _alertService.ShowAlertAsync("Saved", "Note created from current weather.", "OK");
+            }
+            catch
+            {
+                // ignore
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        void OnPropertyChanged([CallerMemberName] string name = null) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+    }
+}

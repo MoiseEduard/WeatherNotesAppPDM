@@ -1,0 +1,29 @@
+﻿using System;
+using WeatherNotesApp.ViewModels;
+
+namespace WeatherNotesApp.Views
+{
+    public partial class WeatherPage : ContentPage
+    {
+        public WeatherPage()
+        {
+            InitializeComponent();
+        }
+
+        private async void OnShowForecastClicked(object sender, EventArgs e)
+        {
+            if (BindingContext is WeatherViewModel vm)
+            {
+                // ensure forecast is fetched for the current Weather.CityName
+                var ok = await vm.EnsureForecastForWeatherAsync();
+                if (ok)
+                {
+                    await Navigation.PushAsync(new ForecastPage(vm));
+                    return;
+                }
+            }
+
+            await DisplayAlert("Info", "Nu exista prognoza. Cauta mai intai o locatie.", "OK");
+        }
+    }
+}

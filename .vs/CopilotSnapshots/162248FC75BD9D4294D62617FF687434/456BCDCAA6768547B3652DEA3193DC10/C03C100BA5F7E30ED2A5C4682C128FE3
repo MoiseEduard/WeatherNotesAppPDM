@@ -1,0 +1,18 @@
+﻿using WeatherNotesApp.Views;
+using WeatherNotesApp.Services;
+
+namespace WeatherNotesApp
+{
+    public partial class App : Application
+    {
+        public DatabaseService DatabaseService { get; }
+
+        public App(DatabaseService databaseService, IAlertService alertService)
+        {
+            DatabaseService = databaseService;
+            InitializeComponent();
+
+            MainPage = new NavigationPage(new NotesPage(databaseService, alertService));
+        }
+    }
+}

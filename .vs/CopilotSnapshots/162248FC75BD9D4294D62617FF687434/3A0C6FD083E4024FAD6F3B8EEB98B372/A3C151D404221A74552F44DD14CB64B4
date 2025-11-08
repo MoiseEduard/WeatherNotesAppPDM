@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WeatherNotesApp.ViewModels;
+using WeatherNotesApp.Services;
+using WeatherNotesApp.Views;
+
+namespace WeatherNotesApp.Views
+{
+    public partial class NotesPage : ContentPage
+    {
+        public NotesPage(DatabaseService databaseService)
+        {
+            InitializeComponent();
+            BindingContext = new NotesViewModel(databaseService);
+        }
+
+        private async void OnWeatherButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WeatherPage());
+        }
+    }
+}

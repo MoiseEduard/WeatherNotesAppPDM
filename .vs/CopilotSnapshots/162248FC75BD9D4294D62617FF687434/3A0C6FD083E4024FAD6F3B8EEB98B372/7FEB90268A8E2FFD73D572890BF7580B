@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:WeatherNotesApp.ViewModels"
+             xmlns:microcharts="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="WeatherNotesApp.Views.WeatherPage"
+             Title="Vremea">
+
+    <ContentPage.BindingContext>
+        <viewmodels:WeatherViewModel x:Name="ViewModel" />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Verifică vremea în orașul tău 🌤️" 
+                   FontSize="22" 
+                   HorizontalOptions="Center" />
+
+            <Entry Placeholder="Introdu orașul"
+                   Text="{Binding City}" />
+
+            <Button Text="Caută"
+                    Command="{Binding GetWeatherCommand}" />
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                               IsVisible="{Binding IsBusy}" />
+
+            <!-- Schimbare aici: folosim HasWeather în loc de Weather -->
+            <Frame Padding="15" IsVisible="{Binding HasWeather}">
+                <VerticalStackLayout>
+                    <Label Text="{Binding Weather.CityName}" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="{Binding Weather.Description}" />
+                    <Label Text="{Binding Weather.Temperature, StringFormat='Temperatura: {0}°C'}" />
+                    <Label Text="{Binding Weather.Humidity, StringFormat='Umiditate: {0}%'}" />
+                    <Label Text="{Binding Weather.WindSpeed, StringFormat='Vânt: {0} m/s'}" />
+
+                    <!-- New button to navigate to forecast page -->
+                    <Button Text="Vezi prognoza pe 5 zile"
+                            IsVisible="{Binding HasWeather}"
+                            Clicked="OnShowForecastClicked" />
+                </VerticalStackLayout>
+            </Frame>
+            <microcharts:ChartView HeightRequest="200"
+                       Margin="0,20,0,0"
+                       Chart="{Binding TemperatureChart}" 
+                       IsVisible="{Binding HasWeather}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

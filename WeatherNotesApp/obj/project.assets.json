@@ -33178,24 +33178,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sandy\\.nuget\\packages\\": {},
+    "C:\\Users\\Cosmin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualStudioProjects\\WeatherNotesApp\\WeatherNotesApp\\WeatherNotesApp.csproj",
+      "projectUniqueName": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\WeatherNotesApp.csproj",
       "projectName": "WeatherNotesApp",
-      "projectPath": "D:\\VisualStudioProjects\\WeatherNotesApp\\WeatherNotesApp\\WeatherNotesApp.csproj",
-      "packagesPath": "C:\\Users\\sandy\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualStudioProjects\\WeatherNotesApp\\WeatherNotesApp\\obj\\",
+      "projectPath": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\WeatherNotesApp.csproj",
+      "packagesPath": "C:\\Users\\Cosmin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sandy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cosmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using WeatherNotesApp.Models;
+using WeatherNotesApp.Services;
+using System.Windows.Input;
+
+namespace WeatherNotesApp.ViewModels
+{
+    public class NotesViewModel : BindableObject
+    {
+        private readonly DatabaseService _databaseService;
+
+        public ObservableCollection<Note> Notes { get; } = new();
+
+        private string _noteText;
+        public string NoteText
+        {
+            get => _noteText;
+            set
+            {
+                _noteText = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ICommand AddNoteCommand { get; }
+        public ICommand DeleteNoteCommand { get; }
+
+        public NotesViewModel(DatabaseService databaseService)
+        {
+            _databaseService = databaseService;
+            AddNoteCommand = new Command(async () => await AddNote());
+            DeleteNoteCommand = new Command<Note>(async (note) => await DeleteNote(note));
+
+            LoadNotes();
+        }
+
+        private async void LoadNotes()
+        {
+            var notes = await _databaseService.GetNotesAsync();
+            Notes.Clear();
+            foreach (var n in notes)
+                Notes.Add(n);
+        }
+
+        private async Task AddNote()
+        {
+            if (string.IsNullOrWhiteSpace(NoteText))
+                return;
+
+            var note = new Note
+            {
+                Text = NoteText,
+                Date = DateTime.Now,
+                WeatherCondition = "-"
+            };
+            await _databaseService.SaveNoteAsync(note);
+            NoteText = string.Empty;
+            LoadNotes();
+        }
+
+        private async Task DeleteNote(Note note)
+        {
+            await _databaseService.DeleteNoteAsync(note);
+            LoadNotes();
+        }
+    }
+}
