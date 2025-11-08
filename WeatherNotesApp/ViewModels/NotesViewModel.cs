@@ -36,7 +36,6 @@ namespace WeatherNotesApp.ViewModels
             AddNoteCommand = new Command(async () => await AddNote());
             DeleteNoteCommand = new Command<Note>(async (note) => await DeleteNote(note));
 
-            // initial load
             _ = LoadNotesAsync();
         }
 

@@ -9,6 +9,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Microsoft.Maui.ApplicationModel;
 using WeatherNotesApp.Models;
 using WeatherNotesApp.Services;
 
@@ -25,7 +26,6 @@ namespace WeatherNotesApp.ViewModels
         private bool _isBusy;
         public bool HasWeather => Weather != null;
 
-        // store last fetched forecast so UI can navigate to it
         private List<ForecastDay> _forecast;
         public List<ForecastDay> Forecast
         {
@@ -33,13 +33,13 @@ namespace WeatherNotesApp.ViewModels
             private set { _forecast = value; OnPropertyChanged(); }
         }
 
-        // Use ObservableCollection so UI updates when items are added/removed
-        private ObservableCollection<string> _searchedCities = new();
-        public ObservableCollection<string> SearchedCities
+        public record CitySearchEntry(string City, DateTime Date)
         {
-            get => _searchedCities;
-            set { _searchedCities = value; OnPropertyChanged(); }
+            public string DisplayText => $"{City} - {Date:dd MMM yyyy}";
         }
+
+        private readonly ObservableCollection<CitySearchEntry> _searchedCities = new();
+        public ObservableCollection<CitySearchEntry> SearchedCities => _searchedCities;
 
         public string City
         {
@@ -54,7 +54,24 @@ namespace WeatherNotesApp.ViewModels
             {
                 _weather = value;
                 OnPropertyChanged();
-                OnPropertyChanged(nameof(HasWeather)); // notificăm și HasWeather
+                OnPropertyChanged(nameof(HasWeather));
+
+                if (_weather != null && !string.IsNullOrWhiteSpace(_weather.CityName))
+                {
+                    var cityName = _weather.CityName.Trim();
+                    MainThread.BeginInvokeOnMainThread(() =>
+                    {
+                        if (!SearchedCities.Any(c => string.Equals(c.City, cityName, StringComparison.OrdinalIgnoreCase)))
+                        {
+                            System.Diagnostics.Debug.WriteLine($"Adding history entry: {cityName}");
+                            SearchedCities.Add(new CitySearchEntry(cityName, DateTime.Now));
+                        }
+                        else
+                        {
+                            System.Diagnostics.Debug.WriteLine($"History already contains: {cityName}");
+                        }
+                    });
+                }
             }
         }
 
@@ -76,7 +93,7 @@ namespace WeatherNotesApp.ViewModels
 
         private void UpdateChart(List<ForecastDay> forecast)
         {
-            Forecast = forecast; // keep the forecast
+            Forecast = forecast;
 
             if (forecast == null || !forecast.Any())
             {
@@ -92,7 +109,6 @@ namespace WeatherNotesApp.ViewModels
                     Color = SKColor.Parse("#2196F3")
                 }).ToList();
 
-            // Use BarChart for daily temperatures
             TemperatureChart = new BarChart { Entries = entries };
         }
 
@@ -113,23 +129,11 @@ namespace WeatherNotesApp.ViewModels
             {
                 Weather = await _weatherService.GetWeatherAsync(City);
 
-                 // store searched cities into local list
-                if (Weather != null && !string.IsNullOrWhiteSpace(Weather.CityName))
+                var forecast = await _weatherService.GetFiveDayForecastAsync(City);
+                if (forecast != null)
                 {
-                    // avoid duplicates (case-insensitive)
-                    var cityName = Weather.CityName.Trim();
-                    if (!SearchedCities.Any(c => string.Equals(c, cityName, StringComparison.OrdinalIgnoreCase)))
-                    {
-                        SearchedCities.Add(cityName);
-                    }
+                    UpdateChart(forecast);
                 }
-
-            // get5-day forecast and update chart
-            var forecast = await _weatherService.GetFiveDayForecastAsync(City);
-            if (forecast != null)
-            {
-                UpdateChart(forecast);
-            }
                 else
                 {
                     Forecast = null;
@@ -141,22 +145,17 @@ namespace WeatherNotesApp.ViewModels
                 System.Diagnostics.Debug.WriteLine($"GetWeatherAsync error: {ex}");
                 try
                 {
-                    // attempt to show an alert on the UI thread
                     await _alertService.ShowAlert("Eroare", ex.Message);
                 }
                 catch
                 {
-                    // ignore UI failures
                 }
             }
             finally
             {
-            IsBusy = false;
+                IsBusy = false;
+            }
         }
-        }
-
-        // Ensure forecast exists for the current Weather.CityName.
-        // Returns true if forecast is available after the call.
         public async Task<bool> EnsureForecastForWeatherAsync()
         {
             if (Weather == null || string.IsNullOrWhiteSpace(Weather.CityName)) return false;
@@ -200,7 +199,6 @@ namespace WeatherNotesApp.ViewModels
             };
 
             await _databaseService.SaveNoteAsync(note);
-            // optionally refresh UI / notify user
             await _alertService.ShowAlert("Saved", "Note created from current weather.");
         }
 

@@ -28,7 +28,6 @@
                             </SwipeItems>
                         </SwipeView.RightItems>
 
-                        <!-- Card vizual pentru fiecare notiță -->
                         <Frame Margin="5"
                        Padding="10"
                        BackgroundColor="#f8f8f8"

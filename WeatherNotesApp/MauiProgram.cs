@@ -13,7 +13,7 @@ namespace WeatherNotesApp
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
-                .UseMicrocharts() // initialize Microcharts.Maui so ChartView in XAML can be loaded
+                .UseMicrocharts()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

@@ -12,7 +12,7 @@ namespace WeatherNotesApp.Services
     public class WeatherService
     {
         private readonly HttpClient _httpClient;
-        private const string ApiKey = "01ac7e1a9e973cae6f53ed1a508a6959"; // înlocuiește cu cheia ta
+        private const string ApiKey = "01ac7e1a9e973cae6f53ed1a508a6959";
         private const string BaseUrl = "https://api.openweathermap.org/data/2.5/weather";
         private const string ForecastUrl = "https://api.openweathermap.org/data/2.5/forecast";
 
@@ -51,7 +51,6 @@ namespace WeatherNotesApp.Services
             {
                 string url = $"{ForecastUrl}?q={city}&appid={ApiKey}&units=metric&lang=ro";
 
-                // Use GetStringAsync so we can log/inspect raw JSON if parsing fails
                 var json = await _httpClient.GetStringAsync(url);
                 if (string.IsNullOrWhiteSpace(json)) return null;
 
@@ -72,7 +71,6 @@ namespace WeatherNotesApp.Services
 
                 if (response == null || response.list == null) return null;
 
-                // OpenWeather returns 3-hour intervals for 5 days. We'll group by date and take the average temp per day.
                 var grouped = response.list
                     .Select(i => new { Item = i, Date = ParseDate(i.dt_txt) })
                     .Where(x => x.Date.HasValue)
@@ -99,13 +97,11 @@ namespace WeatherNotesApp.Services
         {
             if (string.IsNullOrWhiteSpace(dtTxt)) return null;
             if (DateTime.TryParse(dtTxt, out var dt)) return dt;
-            // OpenWeather sometimes uses space separated format; try exact parse with invariant
             if (DateTime.TryParseExact(dtTxt, "yyyy-MM-dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out dt))
                 return dt;
             return null;
         }
 
-        // clase pentru parsarea JSON-ului OpenWeather
         private class OpenWeatherResponse
         {
             public string name { get; set; }
@@ -118,7 +114,6 @@ namespace WeatherNotesApp.Services
         private class MainInfo { public double temp { get; set; } public double humidity { get; set; } }
         private class WindInfo { public double speed { get; set; } }
 
-        // Classes for forecast response
         private class OpenWeatherForecastResponse
         {
             public ForecastItem[] list { get; set; }
@@ -127,7 +122,6 @@ namespace WeatherNotesApp.Services
         private class ForecastItem
         {
             public MainInfo main { get; set; }
-            // dt_txt is a string in the API response, use string here and parse
             public string dt_txt { get; set; }
         }
     }

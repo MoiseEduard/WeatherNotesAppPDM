@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\weatherpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\weatherpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\weatherpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\weatherpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +15,20 @@
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\viewmodels\\weatherviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\weatherpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\weatherpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\notespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\notespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\notespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\notespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\forecastpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\forecastpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\viewmodels\\notesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\viewmodels\\notesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\services\\mauialertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,48 +43,56 @@
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\models\\weatherinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\models\\weatherinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\forecastpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\forecastpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\notespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\notespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\forecastpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\forecastpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\models\\forecastday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\models\\forecastday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\services\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\services\\servicelocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\forecastpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\forecastpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\forecastpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\forecastpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|c:\\users\\cosmin\\desktop\\proiect pdm weather\\weathernotesapppdm\\weathernotesapp\\views\\notespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8584B773-A265-4775-B7AC-383F5059EC79}|WeatherNotesApp\\WeatherNotesApp.csproj|solutionrelative:weathernotesapp\\views\\notespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\ServiceLocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WeatherNotesApp\\Services\\ServiceLocator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,7 +110,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
+              "Title": "ForecastPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\ForecastPage.xaml",
+              "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\ForecastPage.xaml",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\ForecastPage.xaml",
+              "RelativeToolTip": "WeatherNotesApp\\Views\\ForecastPage.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-08T16:13:35.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\WeatherInfo.cs",
+              "RelativeDocumentMoniker": "WeatherNotesApp\\Models\\WeatherInfo.cs",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\WeatherInfo.cs",
+              "RelativeToolTip": "WeatherNotesApp\\Models\\WeatherInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T16:13:06.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "City.cs",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\City.cs",
+              "RelativeDocumentMoniker": "WeatherNotesApp\\Models\\City.cs",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\City.cs",
+              "RelativeToolTip": "WeatherNotesApp\\Models\\City.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T16:13:02.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "ServiceLocator.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\ServiceLocator.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Services\\ServiceLocator.cs",
@@ -110,20 +161,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MauiAlertService.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\MauiAlertService.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Services\\MauiAlertService.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\MauiAlertService.cs",
               "RelativeToolTip": "WeatherNotesApp\\Services\\MauiAlertService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T15:17:26.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IAlertService.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\IAlertService.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Services\\IAlertService.cs",
@@ -136,33 +187,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NotesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\ViewModels\\NotesViewModel.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\ViewModels\\NotesViewModel.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\ViewModels\\NotesViewModel.cs",
               "RelativeToolTip": "WeatherNotesApp\\ViewModels\\NotesViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T15:08:53.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "NotesPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\NotesPage.xaml.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\NotesPage.xaml.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\NotesPage.xaml.cs",
               "RelativeToolTip": "WeatherNotesApp\\Views\\NotesPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T15:08:29.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\App.xaml.cs",
@@ -175,56 +226,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\DatabaseService.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Services\\DatabaseService.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\DatabaseService.cs",
               "RelativeToolTip": "WeatherNotesApp\\Services\\DatabaseService.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T15:03:43.519Z"
+              "WhenOpened": "2025-11-05T15:03:43.519Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Note.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\Note.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Models\\Note.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\Note.cs",
               "RelativeToolTip": "WeatherNotesApp\\Models\\Note.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T15:03:24.348Z"
+              "WhenOpened": "2025-11-05T15:03:24.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "NotesPage.xaml",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\NotesPage.xaml",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\NotesPage.xaml",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\NotesPage.xaml",
               "RelativeToolTip": "WeatherNotesApp\\Views\\NotesPage.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-05T11:07:00.003Z"
+              "WhenOpened": "2025-11-05T11:07:00.003Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WeatherPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\WeatherPage.xaml.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\WeatherPage.xaml.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\WeatherPage.xaml.cs",
               "RelativeToolTip": "WeatherNotesApp\\Views\\WeatherPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T11:04:18.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ForecastPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\ForecastPage.xaml.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\ForecastPage.xaml.cs",
@@ -232,11 +286,12 @@
               "RelativeToolTip": "WeatherNotesApp\\Views\\ForecastPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T11:03:51.612Z"
+              "WhenOpened": "2025-11-05T11:03:51.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "ForecastPage.xaml",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\ForecastPage.xaml",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\ForecastPage.xaml",
@@ -244,23 +299,25 @@
               "RelativeToolTip": "WeatherNotesApp\\Views\\ForecastPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-05T11:03:45.819Z"
+              "WhenOpened": "2025-11-05T11:03:45.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeToolTip": "WeatherNotesApp\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwEQAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwEQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T10:47:40.737Z"
+              "WhenOpened": "2025-11-05T10:47:40.737Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "ForecastDay.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Models\\ForecastDay.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Models\\ForecastDay.cs",
@@ -268,49 +325,51 @@
               "RelativeToolTip": "WeatherNotesApp\\Models\\ForecastDay.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T10:43:24.283Z"
+              "WhenOpened": "2025-11-05T10:43:24.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "WeatherService.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\WeatherService.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Services\\WeatherService.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Services\\WeatherService.cs",
               "RelativeToolTip": "WeatherNotesApp\\Services\\WeatherService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T15:08:07.322Z"
+              "WhenOpened": "2025-11-04T15:08:07.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeatherViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\ViewModels\\WeatherViewModel.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\ViewModels\\WeatherViewModel.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\ViewModels\\WeatherViewModel.cs",
               "RelativeToolTip": "WeatherNotesApp\\ViewModels\\WeatherViewModel.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAuwM8AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAuwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T14:31:08.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "WeatherPage.xaml",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\WeatherPage.xaml",
               "RelativeDocumentMoniker": "WeatherNotesApp\\Views\\WeatherPage.xaml",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\Views\\WeatherPage.xaml",
               "RelativeToolTip": "WeatherNotesApp\\Views\\WeatherPage.xaml",
-              "ViewState": "AgIAACcAAAAAAAAAAADwvzEAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-04T14:28:03.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "WeatherNotesApp\\AppShell.xaml",
@@ -318,11 +377,12 @@
               "RelativeToolTip": "WeatherNotesApp\\AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-04T14:25:24.417Z"
+              "WhenOpened": "2025-11-04T14:25:24.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "WeatherNotesApp\\MainPage.xaml",
@@ -330,17 +390,18 @@
               "RelativeToolTip": "WeatherNotesApp\\MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-04T14:24:26.511Z"
+              "WhenOpened": "2025-11-04T14:24:26.511Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "WeatherNotesApp\\MauiProgram.cs",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Proiect PDM Weather\\WeatherNotesAppPDM\\WeatherNotesApp\\MauiProgram.cs",
               "RelativeToolTip": "WeatherNotesApp\\MauiProgram.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAABRwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T15:35:08.181Z",
               "EditorCaption": ""

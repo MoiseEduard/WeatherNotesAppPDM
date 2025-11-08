@@ -18,8 +18,6 @@ namespace WeatherNotesApp.Services
             _database.CreateTableAsync<Note>().Wait();
             _database.CreateTableAsync<City>().Wait();
         }
-
-        // CRUD pentru Note
         public Task<List<Note>> GetNotesAsync()
         {
             return _database.Table<Note>().OrderByDescending(n => n.Date).ToListAsync();
@@ -38,7 +36,6 @@ namespace WeatherNotesApp.Services
             return _database.DeleteAsync(note);
         }
 
-        // CRUD pentru City
         public Task<List<City>> GetCitiesAsync()
         {
             return _database.Table<City>().OrderBy(c => c.Name).ToListAsync();

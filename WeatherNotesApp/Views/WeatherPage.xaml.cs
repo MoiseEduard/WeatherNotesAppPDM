@@ -2,6 +2,7 @@
 using System.Linq;
 using WeatherNotesApp.ViewModels;
 using WeatherNotesApp.Services;
+using Microsoft.Maui.Controls;
 
 namespace WeatherNotesApp.Views
 {
@@ -17,7 +18,6 @@ namespace WeatherNotesApp.Views
         {
             if (BindingContext is WeatherViewModel vm)
             {
-                // ensure forecast is fetched for the current Weather.CityName
                 var ok = await vm.EnsureForecastForWeatherAsync();
                 if (ok)
                 {
@@ -33,43 +33,18 @@ namespace WeatherNotesApp.Views
         {
             if (BindingContext is WeatherViewModel vm)
             {
-                if (!string.IsNullOrWhiteSpace(vm.City))
-                {
-                    // trigger the command to fetch weather for the selected city
-                    if (vm.GetWeatherCommand?.CanExecute(null) == true)
-                        vm.GetWeatherCommand.Execute(null);
-                }
+                var picker = sender as Picker;
+                var selectedEntry = picker?.SelectedItem as WeatherViewModel.CitySearchEntry;
+                if (selectedEntry == null)
+                    return;
+
+                vm.City = selectedEntry.City;
+                if (vm.GetWeatherCommand?.CanExecute(null) == true)
+                    vm.GetWeatherCommand.Execute(null);
+
+                if (picker != null)
+                    picker.SelectedItem = null;
             }
-        }
-
-        private void OnCityTapped(object sender, ItemTappedEventArgs e)
-        {
-            if (e == null || e.Item == null) return;
-            if (BindingContext is WeatherViewModel vm)
-            {
-                var tappedCity = e.Item as string;
-                if (!string.IsNullOrWhiteSpace(tappedCity))
-                {
-                    // Before switching to the tapped city, save the currently shown city into the history
-                    var currentCity = vm.Weather?.CityName ?? vm.City;
-                    if (!string.IsNullOrWhiteSpace(currentCity) &&
-                        !string.Equals(currentCity.Trim(), tappedCity.Trim(), StringComparison.OrdinalIgnoreCase))
-                    {
-                        if (!vm.SearchedCities.Any(c => string.Equals(c, currentCity.Trim(), StringComparison.OrdinalIgnoreCase)))
-                        {
-                            vm.SearchedCities.Add(currentCity.Trim());
-                        }
-                    }
-
-                    vm.City = tappedCity;
-                    if (vm.GetWeatherCommand?.CanExecute(null) == true)
-                        vm.GetWeatherCommand.Execute(null);
-                }
-            }
-
-            // deselect the item
-            if (sender is ListView lv)
-                lv.SelectedItem = null;
         }
     }
 }

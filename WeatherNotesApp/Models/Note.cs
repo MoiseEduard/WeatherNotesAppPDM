@@ -16,9 +16,8 @@ namespace WeatherNotesApp.Models
 
         public string Text { get; set; }
 
-        public string WeatherCondition { get; set; } // description
+        public string WeatherCondition { get; set; }
 
-        // Added fields to save city-related info when a search result is saved
         public string CityName { get; set; }
         public double Temperature { get; set; }
     }
